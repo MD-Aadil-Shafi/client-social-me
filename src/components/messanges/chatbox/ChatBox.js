@@ -69,7 +69,8 @@ const ChatBox = ({convId, convDp, frndId, currConv, deleteMessage}) => {
 //now with useRef
 const socket = useRef()
 useEffect(()=>{
-  socket.current = io("ws://localhost:8900")
+  //socket.current = io("ws://localhost:8900")
+  socket.current = io("https://socialmeapi-production.up.railway.app")
 //to get message
 socket.current.on("getMessage", m =>{
     //update on arrival message
