@@ -1,0 +1,49 @@
+.chat-box-top{
+    height: 70vh;
+    overflow-y: scroll;
+
+    .message-chunk{
+        max-width: 300px;
+        border-radius: 0px 12px 12px;
+    }
+    .text-area{
+        max-height: 26vh;
+    }
+}
+
+.chat-box-top::-webkit-scrollbar{
+    width: 8px;
+    height: 8px;
+}
+.chat-box-top::-webkit-scrollbar-thumb{
+    width: 8px;
+    height: 8px;
+    background-color: lightgrey;
+    border-radius: 4px;
+    
+}
+.chat-box-top::-webkit-scrollbar-track{
+    width: 8px;
+    height: 8px;
+    background-color: gray;
+    border-radius: 4px;
+    
+}
+
+.message-block{
+    position: relative;
+
+    .message-inner-block{
+        visibility: hidden;
+        opacity: 0;
+        transition: 1s all ease;
+        position: absolute;
+        top: 0;
+        right: 10,
+    }
+}
+.message-block:hover .message-inner-block{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s all ease;
+}

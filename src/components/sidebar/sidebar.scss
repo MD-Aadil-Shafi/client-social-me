@@ -1,0 +1,35 @@
+.sidebar{
+    padding-top: 90px;
+    flex: 2;// or can give in percentage
+    //height: calc(100vh - 90px);//60px is topbar height
+    height: 100vh;
+    background-color: white;
+    margin: 16px;
+    border-radius: 12px;
+    overflow-y: scroll;
+    z-index: 9 !important;
+}
+
+.sidebar::-webkit-scrollbar{
+    width: 8px;
+    height: 8px;
+}
+
+.sidebar::-webkit-scrollbar-track{
+    background-color: lightgrey;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.4) inset;
+}
+
+.sidebar::-webkit-scrollbar-thumb{
+    background-color: #9C27B0;
+    border-radius: 8px;
+
+}
+
+
+@media (max-width:820px){
+    .sidebar{
+        display: none;
+    }
+}

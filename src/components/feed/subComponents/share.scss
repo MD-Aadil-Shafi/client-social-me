@@ -1,0 +1,17 @@
+.share{
+    background-color: #fff;
+    border-radius: 12px;
+    .share-inp{
+        margin-left: 18px;
+    }
+    .share-btns{
+        font-size: 0.8vw;
+    }
+}
+
+
+@media (max-width:1220px){
+    .share-btns{
+        font-size: 1.2vw !important;
+    }
+}

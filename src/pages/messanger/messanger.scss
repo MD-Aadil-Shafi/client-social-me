@@ -1,0 +1,109 @@
+.messagner{
+    display: flex;
+    height: calc(100vh - 68px);
+
+    .chat-menu{
+        flex: 3.5;
+        height: 100%;
+        background-color: #393053;
+        overflow-y: scroll;
+        transition: all 1s ease-in-out;
+    }
+    .chat-box{
+        flex: 5.5;
+        height: 100%;
+        background-color: #635985;
+        transition: all 1s ease-in-out;
+    }
+    .online{
+        flex: 3;
+        height: 100%;
+        background-color: #443C68;
+        overflow-y: scroll;
+        transition: all 1s ease-in-out;
+    }
+
+    .chat-menu::-webkit-scrollbar{
+        width: 8px;
+        height: 8px;
+    }
+    .chat-menu::-webkit-scrollbar-thumb{
+        width: 8px;
+        height: 8px;
+        background-color: lightgrey;
+        border-radius: 4px;
+        
+    }
+    .chat-menu::-webkit-scrollbar-track{
+        width: 8px;
+        height: 8px;
+        background-color: gray;
+        border-radius: 4px;
+        
+    }
+
+    .online::-webkit-scrollbar{
+        width: 8px;
+        height: 8px;
+    }
+    .online::-webkit-scrollbar-thumb{
+        width: 8px;
+        height: 8px;
+        background-color: lightgrey;
+        border-radius: 4px;
+        
+    }
+    .online::-webkit-scrollbar-track{
+        width: 8px;
+        height: 8px;
+        background-color: gray;
+        border-radius: 4px;
+        
+    }
+
+    
+}
+
+
+.puller-btns{
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    margin-top: 50px;
+    visibility: hidden;
+}
+
+
+@media (max-width:767px) {
+
+    .puller-btns{
+        visibility: visible;
+    }
+    .messagner{
+        position: relative;
+        .chat-menu{
+            position: absolute;
+            left: -100%;
+            z-index: 5;
+        }
+        // .chat-box{
+        //     flex: 5.5;
+        //     height: 100%;
+        //     background-color: #635985;
+        // }
+        .online{
+            position: absolute;
+            right: -100%;
+            z-index: 5;
+        }
+
+        .chat-menu-inn{
+            left: 0%;
+        }
+        .online-inn{
+            right: 0%;
+        }
+    }
+}
+
+
